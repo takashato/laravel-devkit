@@ -1,0 +1,32 @@
+{
+  "name": "takashato/laravel-devkit",
+  "description": "Laravel Development Kit",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thanh Son Banh",
+      "email": "takashato@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "laravel/laravel": "^8.0",
+    "google/recaptcha": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Takashato\\LaravelDevkit\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Takashato\\LaravelDevkit\\LaravelDevkitProvider"
+      ]
+    }
+  }
+}
